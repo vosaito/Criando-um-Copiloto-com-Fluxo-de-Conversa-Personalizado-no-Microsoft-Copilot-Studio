@@ -1,0 +1,13 @@
+	Respostas generativas com IA - Microsoft Copilot Studio
+
+São retorno do agente/IA para solicitações do usuário quando a pergunta não se enquadra nos tópicos estabelecidos/orientados para o agente, utilizando uma fonte de conhecimento.
+O agente consulta essa fonte para coletar informações sobre a solicitação, gerando um retorno. Por padrão, essa fonte é uma consulta geral na internet, e o retorno é uma mensagem de texto com as informações que a IA julgar relevente para o usuário.
+Também é possível "forçar" o agente à utilizar a resposta generativa para retornar uma informação ao usuário. Para isso, é necessário utilizar no tópico a "Conversational Boosting" configurando o que o agente deve consultar e retornar.
+
+Para as respostas generativa, é possível configurar o balanceamento de conteúdo em suas respostas.
+Para níveis:
+- "Low": o IA se basea pouco no conteúdo/fonte e utiliza mais a "criatividade" para gerar os retornos;
+- "Medium": o IA utiliza de forma balanceada a fonte e criatividade para gerar os retornos;
+- "High": o IA utiliza apenas a fonte de conhecimento para gerar os retornos. caso não encontre informação sobre o assunto na fonte, ele não retorna nada.
+
+

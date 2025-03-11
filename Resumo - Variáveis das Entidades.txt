@@ -1,0 +1,40 @@
+	Entidades
+
+É o reconhecimento de linguagem natural, a capacidade da IA compreender a intenção do usuário.
+Uma entidade é considerada uma unidade de informação que representa um tipo de assunto
+
+
+	
+	Preenchimento de slot
+
+É um conceito do reconhecimento de linguagem natural que significa salva uma entidade reconhecida em um objeto. Ele reconhece um valor da entidade e passa para uma variável.
+Ex: "Quero solicitar 50 camisetas do Brasil para os meus funcionários."
+Entidades:
+	Quantidade: 50
+	Produto: Camisetas
+	País: Brasil
+
+
+
+	Melhores práticas para entidade
+- Definir um nome claro
+- Descrever a sua entidade para outros darem manutenção no futuro
+- Definir sinônimos para garantir o mapeamento
+- Usar Regex sempre que possível para identificar padrões	
+
+
+
+	Variáveis
+
+Utilizadas para armazenar valores/informações que o usuário apresenta que fazem parte das entidades pré-estabelecidas ou criadas.
+As variáveis sempre são criadas nos tópicos.
+
+Tipos de variáveis:
+Tópico: variáveis do tópico
+Variáveis globais: variáveis armazenadas na conversa
+Variáveis de sistema: variáveis do banco de dados do sistema (Power plataform)
+Variáveis de ambiente: variáveis armazenadas no ambiente, valores validos para todos os programas/soluções que estão no mesmo ambiente.
+
+
+
+

@@ -1,0 +1,59 @@
+
+	Tópicos
+
+São conversas dentro de um copilot, são fixas e podem ou não ser adicionadas/customizadas.
+Sempre tem: 1 gatilho com frases; 1 ou mais ações.
+exemplo: Respostas para Olá do usuário
+	"Usuário: Olá!
+	Agente: Olá! Eu sou o agente virtual, estou aqui para te ajudar!"
+
+Tópicos são compostos por:
+- Gatilho(s)
+	São frases que o copilot detecta na conversa com o usuário para iniciar o tópico que em questão
+- Pergunta(s)
+	São perguntas para obter informações do usuário para consultar, analisar e buscar as  informações
+- respostas/retorno
+	São as informações buscadas pelo agente com base no assunto do tópico e as informações fornecidas pelo usuário
+
+Melhores práticas em Tópicos
+- ter 5-10 frases no gatilho (trigger)
+- ter nomes claros e não repetitivos
+- ter frases de gatilhos que não conflitem com outros tópicos
+- ter em mente quando dividir os tópicos ou copilots diferentes
+
+
+
+	Ramificação de Tópicos
+
+Determinado por uma condição.
+Usuário é apresentado com uma pergunta onde será definido uma condição, essa condição ramifica o tópico em dois ou mais caminhos a depender da resposta do usuário.
+
+	Enviar para outro tópico
+
+No meio do tópico/ramificação, é possível enviar a conversa para outro tópico existente. Isso evita que refaça todos os gatilhos e perguntas já existentes em um outro tópico e também pode direcionar para outro tópico sem que o usuário de fato escolhar iniciar com esse tópico.
+
+
+
+	Tópicos de sistema
+	Fallback (falhas)
+
+Esse tópico é "chamado" quando o agente não entende o que o usuário está solicitando.
+Normalmente, é enviado uma mensagem como "Não sei como ajudar. Pode reformular a pergunta?".
+Por padrão, é enviado essa mensagem por 3 vezes e depois já envia para mensagem de escalonar (falar com atendente humano).
+
+	Tópicos de sistema
+	Escalonar (falar com atendente)
+
+Esse tópico é utilizado com o usuário quer conversar com um ser humano. Por padrão, o agente não está configurado para transferir o chat para alguém. Caso não tenha esse serviço, a boa prática é informar um telefone de contato ou email para que o usuário possa entrear em contato.
+
+	Tópicos de sistema
+	Conversational boosting (generative IA)
+
+Tópico para o agente utilizar a IA para gerar a resposta para a pergunta do usuário
+Normalmente, é utilizado esse recurso quando a pergunta do usuário não tem nenhuma palavra que aciona algum tópico.
+OBS: Por padrão, o agente sempre procura palavras para "chamar" um tópico. Depois ele aciona o conversational boosting. Caso o prompt acionar mais de um tópico, mas o usuário não quer nenhum dos tópico apresentados, o usuário é transferido para o Fallback. Quando o fallback é acionado, quase sempre é algum erro de estrutura do agente. Pois não apresenta os caminhos necessário para atender o usuário.
+
+
+
+
+	
